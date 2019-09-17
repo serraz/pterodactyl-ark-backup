@@ -1,6 +1,6 @@
 #!/bin/sh
 for i in $(
-    find /mnt/daemon-data/*/ShooterGame/Saved -maxdepth 0 -type d
+    find /mnt/ark-daemon-data/*/ShooterGame/Saved -maxdepth 0 -type d
 ); do
     rootDirectory=$(echo $i | sed -e 's/ShooterGame\/Saved//g')
     containerGuid=$(basename $rootDirectory)
